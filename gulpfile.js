@@ -72,7 +72,6 @@ gulp.task('javascripts', function() {
     .pipe(sourcemaps.init({
         loadMaps: true
     }))
-    // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./assets/scripts'))
     .pipe(gulp.dest('./docs/assets/scripts'))
     .pipe(reload({ stream: true }));
